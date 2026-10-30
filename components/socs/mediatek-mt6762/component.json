@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "id": "mediatek-mt6762",
+  "kind": "soc",
+  "description": "MT6762 platform using MT6765-family vendor infrastructure; IP compatibility must be established individually",
+  "upstream": [{"origin": "linux-6.18.58", "paths": ["drivers/clk/mediatek/clk-mt6765.c", "drivers/irqchip/irq-mtk-sysirq.c"], "status": "candidate-not-enabled"}],
+  "legacy_sources": [],
+  "limitations": ["MT6765 family naming is not blanket compatibility", "CCF probe and callbacks require side-effect audit"],
+  "integration": "extend-after-audit"
+}

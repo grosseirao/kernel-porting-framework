@@ -1,0 +1,358 @@
+{
+  "classification_basis": "AST inventory of independent toolkit tests only",
+  "note": "Classification is not execution. Device integration and historical kernel results belong to the port repository.",
+  "schema": 1,
+  "tests": [
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_boundary.ToolkitBoundaryTests.test_runtime_never_discovers_configuration_beside_the_package",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_boundary.py",
+      "source_sha256": "f22c9ec5b26052c326520586eafa91ff6b827ed1d1e152869ae2cae9e96af778"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_boundary.ToolkitBoundaryTests.test_workspace_apis_reject_cwd_relative_roots_before_input_reads",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_boundary.py",
+      "source_sha256": "f22c9ec5b26052c326520586eafa91ff6b827ed1d1e152869ae2cae9e96af778"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_boundary.ToolkitBoundaryTests.test_library_has_no_static_device_or_cli_dependency",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_boundary.py",
+      "source_sha256": "f22c9ec5b26052c326520586eafa91ff6b827ed1d1e152869ae2cae9e96af778"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_boundary.ToolkitBoundaryTests.test_all_library_modules_import_without_workspace_reads",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_boundary.py",
+      "source_sha256": "f22c9ec5b26052c326520586eafa91ff6b827ed1d1e152869ae2cae9e96af778"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_boundary.ToolkitBoundaryTests.test_external_synthetic_workspace_uses_explicit_inputs_only",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_boundary.py",
+      "source_sha256": "f22c9ec5b26052c326520586eafa91ff6b827ed1d1e152869ae2cae9e96af778"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_binary_logs.BinaryLogCliTests.test_external_profile_and_inputs_from_foreign_cwd_preserve_all_outputs",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_binary_logs.py",
+      "source_sha256": "310ce6be5dc810248ad553d85e54bf5848984c17df40689cdef25950840e4261"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_binary_logs.BinaryLogCliTests.test_missing_workspace_invalid_size_and_override_never_publish",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_binary_logs.py",
+      "source_sha256": "310ce6be5dc810248ad553d85e54bf5848984c17df40689cdef25950840e4261"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_dt.DtCliRootTests.test_no_implicit_workspace_or_input_reads",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_dt.py",
+      "source_sha256": "a7cc59d46ac52862594379fb2b8fabd375a5a489b339f9e4c6c4945f3d91cd6c"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_dt.DtCliIntegrationTests.test_external_workspace_outputs_and_create_only_from_foreign_cwd",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_dt.py",
+      "source_sha256": "a7cc59d46ac52862594379fb2b8fabd375a5a489b339f9e4c6c4945f3d91cd6c"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_dt.DtCliIntegrationTests.test_mismatch_is_not_equivalence_or_static_contract_success",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_dt.py",
+      "source_sha256": "a7cc59d46ac52862594379fb2b8fabd375a5a489b339f9e4c6c4945f3d91cd6c"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_dt.DtCliIntegrationTests.test_bad_fdt_publishes_no_partial_files",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_dt.py",
+      "source_sha256": "a7cc59d46ac52862594379fb2b8fabd375a5a489b339f9e4c6c4945f3d91cd6c"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_dt_table.DtTableCliTests.test_empty_container_from_foreign_cwd_and_create_only_before_reads",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_dt_table.py",
+      "source_sha256": "d8cedd9c72334f16b4c0be6d8c38229d406add20a9b3f9f4563d69418891f27f"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_dt_table.DtTableCliTests.test_invalid_workspace_and_container_never_publish_report",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_dt_table.py",
+      "source_sha256": "d8cedd9c72334f16b4c0be6d8c38229d406add20a9b3f9f4563d69418891f27f"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_kconfig.KconfigCliTests.test_ordered_fragments_two_architectures_and_no_private_values",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_kconfig.py",
+      "source_sha256": "a62da47267a0ab3f1075f6e64240c054e09b1a40ecad9dbce33745a9fc508f1e"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_kconfig.KconfigCliTests.test_mismatch_has_evidence_invalid_input_does_not",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_kconfig.py",
+      "source_sha256": "a62da47267a0ab3f1075f6e64240c054e09b1a40ecad9dbce33745a9fc508f1e"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_kconfig.KconfigCliTests.test_workspace_is_required_validated_before_reads_and_independent_from_cwd",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_kconfig.py",
+      "source_sha256": "a62da47267a0ab3f1075f6e64240c054e09b1a40ecad9dbce33745a9fc508f1e"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_text_logs.TextLogCliTests.test_external_workspace_from_foreign_cwd_and_filtered_create_only_output",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_text_logs.py",
+      "source_sha256": "dc5651e04b9e31d869147e9df0a16144f953583fc115463aeca9776bf24a26ff"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_text_logs.TextLogCliTests.test_missing_or_relative_workspace_fails_before_reading_profile",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_text_logs.py",
+      "source_sha256": "dc5651e04b9e31d869147e9df0a16144f953583fc115463aeca9776bf24a26ff"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_cli_text_logs.TextLogCliTests.test_invalid_capture_publishes_nothing_and_incomplete_stability_returns_two",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_cli_text_logs.py",
+      "source_sha256": "dc5651e04b9e31d869147e9df0a16144f953583fc115463aeca9776bf24a26ff"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_component_sources.ComponentSourceTests.test_explicit_external_root_selects_exact_bytes_independently_of_cwd",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_component_sources.py",
+      "source_sha256": "d67ec294616ed4cb7a93248962347edb28e2083e69559ee210c3679e55e7a767"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_component_sources.ComponentSourceTests.test_missing_or_invalid_input_never_falls_back",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_component_sources.py",
+      "source_sha256": "d67ec294616ed4cb7a93248962347edb28e2083e69559ee210c3679e55e7a767"
+    },
+    {
+      "classes": [
+        "offline",
+        "wsl-qemu"
+      ],
+      "id": "toolkit.test_component_sources.ComponentSourceTests.test_shared_parent_symlink_is_refused_even_inside_the_same_root",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_component_sources.py",
+      "source_sha256": "d67ec294616ed4cb7a93248962347edb28e2083e69559ee210c3679e55e7a767"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_core.PortkitTests.test_streamed_hash_equivalence_and_rejection",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_core.py",
+      "source_sha256": "b9b610982873578fc9610e337c13de6aae5433a656b89edc0c1bf4ac5362c8a8"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_core.PortkitTests.test_manifest_order_and_escape_rejected",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_core.py",
+      "source_sha256": "b9b610982873578fc9610e337c13de6aae5433a656b89edc0c1bf4ac5362c8a8"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_core.PortkitTests.test_evidence_never_overwrites_and_no_temp_leaks",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_core.py",
+      "source_sha256": "b9b610982873578fc9610e337c13de6aae5433a656b89edc0c1bf4ac5362c8a8"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_core.PortkitTests.test_subprocess_preserves_argv_kwargs_and_has_no_retry",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_core.py",
+      "source_sha256": "b9b610982873578fc9610e337c13de6aae5433a656b89edc0c1bf4ac5362c8a8"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_core.PortkitTests.test_result_vocabulary_does_not_imply_recovery",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_core.py",
+      "source_sha256": "b9b610982873578fc9610e337c13de6aae5433a656b89edc0c1bf4ac5362c8a8"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_dt_candidates.DtCandidateTests.test_unique_match_avoids_missing_fallback_and_preserves_read_order",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_dt_candidates.py",
+      "source_sha256": "2130d30714ebcbc2556d163e78139cbc1cd7a4dd459e488f838723fac72c24e5"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_dt_candidates.DtCandidateTests.test_no_match_uses_explicit_fallback_without_claiming_equivalence",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_dt_candidates.py",
+      "source_sha256": "2130d30714ebcbc2556d163e78139cbc1cd7a4dd459e488f838723fac72c24e5"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_dt_candidates.DtCandidateTests.test_ambiguity_refused_without_selecting_or_reading_fallback",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_dt_candidates.py",
+      "source_sha256": "2130d30714ebcbc2556d163e78139cbc1cd7a4dd459e488f838723fac72c24e5"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_dt_candidates.DtCandidateTests.test_all_candidates_are_validated_even_after_a_match",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_dt_candidates.py",
+      "source_sha256": "2130d30714ebcbc2556d163e78139cbc1cd7a4dd459e488f838723fac72c24e5"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_kconfig.KconfigTests.test_raw_values_duplicates_disabled_and_string_escapes",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_kconfig.py",
+      "source_sha256": "fc1d96671b4fcf58c4856767b873f727671130cf8dea3ed77d482b9af73c9924"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_kconfig.KconfigTests.test_missing_n_only_is_equivalent_and_first_failure_is_preserved",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_kconfig.py",
+      "source_sha256": "fc1d96671b4fcf58c4856767b873f727671130cf8dea3ed77d482b9af73c9924"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_ssh_policy.SshPolicyTests.test_explicit_board_policy_accepts_only_matching_endpoints",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_ssh_policy.py",
+      "source_sha256": "0902d83158c642910e0bfda6e6f201401b4ec758b619c75cc9de923d08dc22a9"
+    },
+    {
+      "classes": [
+        "offline"
+      ],
+      "id": "toolkit.test_ssh_policy.SshPolicyTests.test_missing_or_malformed_policy_has_no_implicit_device_defaults",
+      "phone_transport_authorized": false,
+      "private_fixture_possible": false,
+      "source": "tools/tests/toolkit/test_ssh_policy.py",
+      "source_sha256": "0902d83158c642910e0bfda6e6f201401b4ec758b619c75cc9de923d08dc22a9"
+    }
+  ]
+}

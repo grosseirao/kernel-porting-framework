@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "id": "armv8-arm32",
+  "kind": "architecture",
+  "description": "ARMv8 CPU platform running the existing ARM32 kernel ABI; not an ARM64 port",
+  "upstream": [{"origin": "linux-6.18.58", "paths": ["arch/arm/"], "status": "existing-framework"}],
+  "legacy_sources": [],
+  "limitations": ["CPU architecture support does not establish SoC clocks, firmware or board support"],
+  "integration": "reuse-upstream"
+}

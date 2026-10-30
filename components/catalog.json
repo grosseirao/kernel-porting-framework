@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metadata_license": "MIT",
+  "origins": {
+    "linux-6.18.58": {
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
+      "version": "6.18.58",
+      "revision": "2926d88bb7fc4608fd942453d929c39e4e5ec006",
+      "license": "GPL-2.0-only overall; preserve per-file licenses and exceptions"
+    },
+    "lg-android-q": {
+      "url": "https://opensource.lge.com/",
+      "version": "LMX430HM_Kernel_Q, Linux 4.9.190",
+      "revision": "sha256:4d3f77663a1839d5c9ffd53ee040e6c95eff0f6fd41605762dba7b77ce6017c8",
+      "license": "GPL-2.0 kernel; preserve all per-file notices; HM source is not proof of BMW equivalence"
+    }
+  },
+  "components": [
+    "components/architectures/armv8-arm32/component.json",
+    "components/socs/mediatek-mt6762/component.json",
+    "components/controllers/mediatek-mt65xx-i2c/component.json",
+    "components/pmics/mediatek-mt6357/component.json",
+    "components/chargers/mediatek-mt6371/component.json",
+    "components/touch/focaltech-ft5446/component.json"
+  ]
+}

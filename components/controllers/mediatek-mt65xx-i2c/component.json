@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "id": "mediatek-mt65xx-i2c",
+  "kind": "controller",
+  "description": "MediaTek I2C controller family; controller instance and electrical wiring belong to the board",
+  "upstream": [{"origin": "linux-6.18.58", "paths": ["drivers/i2c/busses/i2c-mt65xx.c"], "status": "candidate-not-enabled"}],
+  "legacy_sources": ["kernel/modules/k40s-battery-i2c/provider.c", "kernel/modules/k40s-i2c5-irq-policy/irq-policy.h"],
+  "limitations": ["Legacy experiments remain board-coupled, not reusable drivers", "Upstream probe/error/resume reset and DMA differ from validated FIFO", "No direct bind authorized"],
+  "integration": "extend-after-audit"
+}

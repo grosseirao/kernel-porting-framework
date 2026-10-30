@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "mediatek-mt6357",
+  "kind": "pmic",
+  "description": "MT6357 acquisition, fuel gauge and power interfaces; board calibration is separate",
+  "upstream": [{"origin": "linux-6.18.58", "paths": ["drivers/iio/adc/mt6359-auxadc.c", "drivers/mfd/mt6397-core.c"], "status": "candidate-not-enabled"}],
+  "legacy_sources": ["kernel/modules/k40s-battery-i2c/battery-client.c", "kernel/modules/k40s-battery-coulomb/coulomb-decode.h"],
+  "reusable_sources": ["kernel/components/pmics/mt6357/mt6357-car-raw.h", "kernel/components/pmics/mt6357/mt6357-car-latch.h"],
+  "limitations": ["Use IIO/regmap/power_supply, not a parallel battery framework", "AUXADC reset/probe writes require review", "Upstream AUXADC scale candidate is staging-only; request ownership, stop errors and channel types remain blockers", "Calibration, thermistor and electrical limits are board-specific", "Finite snapshots are not continuous battery support or SOC"],
+  "integration": "extend-after-audit"
+}

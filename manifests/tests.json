@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "catalog_scope": "toolkit-only",
+  "safe_offline_modules": [
+    "toolkit.test_kconfig",
+    "toolkit.test_boundary",
+    "toolkit.test_core",
+    "toolkit.test_cli_kconfig",
+    "toolkit.test_cli_dt_table",
+    "toolkit.test_cli_text_logs",
+    "toolkit.test_cli_binary_logs",
+    "toolkit.test_cli_dt",
+    "toolkit.test_dt_candidates",
+    "toolkit.test_component_sources",
+    "toolkit.test_ssh_policy"
+  ],
+  "classification_policy": "Independent KPF library tests only. Device integration coverage belongs to each independent port repository; an AST catalog is not execution evidence.",
+  "categories": [
+    "offline",
+    "compilacao-c",
+    "wsl-qemu"
+  ],
+  "note": "No device transport or physical operations authorized. Run affected consumer tests separately in its explicit workspace."
+}

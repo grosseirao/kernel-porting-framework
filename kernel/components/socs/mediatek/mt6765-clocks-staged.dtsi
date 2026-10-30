@@ -1,0 +1,27 @@
+// SPDX-License-Identifier: GPL-2.0-only
+/* Native MT6765 CCF resources, shared SoC data, not board oscillator choices.
+ * Shapes agree with LG vendor DT and adomerle/linux-mt6765 5be6e646.
+ * Requires 2-cell root address/size. No activation or assigned clock changes.
+ */
+/ {
+	mt6765_topckgen: clock-controller@10000000 {
+		compatible = "mediatek,mt6765-topckgen", "syscon";
+		reg = <0 0x10000000 0 0x1000>;
+		#clock-cells = <1>;
+		status = "disabled";
+	};
+
+	mt6765_infracfg: clock-controller@10001000 {
+		compatible = "mediatek,mt6765-infracfg", "syscon";
+		reg = <0 0x10001000 0 0x1000>;
+		#clock-cells = <1>;
+		status = "disabled";
+	};
+
+	mt6765_apmixed: clock-controller@1000c000 {
+		compatible = "mediatek,mt6765-apmixedsys", "syscon";
+		reg = <0 0x1000c000 0 0x1000>;
+		#clock-cells = <1>;
+		status = "disabled";
+	};
+};

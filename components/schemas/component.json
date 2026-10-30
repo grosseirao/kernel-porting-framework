@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema", "id", "kind", "description", "upstream", "legacy_sources", "limitations", "integration"],
+  "properties": {
+    "schema": {"type": "integer", "const": 1},
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "kind": {"enum": ["architecture", "soc", "controller", "pmic", "charger", "touch", "codec", "wifi", "panel"]},
+    "description": {"type": "string", "minLength": 1},
+    "upstream": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false, "required": ["origin", "paths", "status"],
+      "properties": {
+        "origin": {"type": "string", "minLength": 1},
+        "paths": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "status": {"enum": ["existing-framework", "candidate-not-enabled"]}
+      }
+    }},
+    "legacy_sources": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "reusable_sources": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "integration": {"enum": ["reuse-upstream", "extend-after-audit", "blocked-pending-electrical-audit"]}
+  }
+}

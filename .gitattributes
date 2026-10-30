@@ -1,0 +1,28 @@
+# Preserve reviewed bytes and hashes. Do not normalize legacy files silently.
+* -text
+*.patch -text
+# A unified diff represents an empty context line with one mandatory space.
+patches/kernel/staging/mt6765-ccf-arm32-k40s-v1.patch whitespace=-blank-at-eol
+patches/kernel/staging/mt6765-ccf-early-armpll-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/k40s-native-armpll-hook-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/mt6765-i2c-probe-safety-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/generic-adc-battery-supplier-errors-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/k40s-battery-continuous-native-lab-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/mt6357-auxadc-quiescent-banks-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/generic-adc-battery-temperature-units-upstream-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/generic-adc-battery-callback-context-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/generic-adc-battery-current-precision-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/adc-battery-helper-supplier-errors-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/adc-battery-helper-estimate-validity-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/adc-battery-helper-lifecycle-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/generic-adc-battery-supplier-status-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/generic-adc-battery-paired-input-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/rtc-mt6397-k40s-vendor-epoch-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/mtk-wdt-k40s-suspend-guard-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/mtk-wdt-k40s-handoff-normalize-v2.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/rtc-mt6397-alarm-cancel-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/adc-battery-helper-temperature-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/generic-adc-battery-helper-supplier-status-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/mt6370-charger-mutex-before-psy-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/mt6370-charger-lifecycle-v1.patch whitespace=-blank-at-eol,-space-before-tab
+patches/kernel/staging/mt6370-charger-k40s-readonly-v1.patch whitespace=-blank-at-eol,-space-before-tab

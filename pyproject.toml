@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: MIT
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kpf-portkit"
+version = "0.1.2"
+description = "Offline host primitives for kernel porting; device workspaces are separate inputs"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.scripts]
+kpf-check-kconfig = "portkit.cli.kconfig:main"
+kpf-inspect-dt-table = "portkit.cli.dt_table:main"
+kpf-analyze-stability-log = "portkit.cli.stability:main"
+kpf-analyze-smp-log = "portkit.cli.smp:main"
+kpf-analyze-register-snapshot = "portkit.cli.register_snapshot:main"
+kpf-decode-ramoops-console = "portkit.cli.ramoops:main"
+kpf-decode-session-logs = "portkit.cli.session_logs:main"
+kpf-inspect-boot-snapshot = "portkit.cli.boot_snapshot:main"
+kpf-check-dt-contract = "portkit.cli.dt_contract:main"
+kpf-compare-dtb = "portkit.cli.dt_compare:main"
+
+[project.optional-dependencies]
+devicetree = ["pylibfdt==1.7.2.post2"]
+composition = ["jsonschema==4.26.0"]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["portkit", "portkit.*"]
+namespaces = false

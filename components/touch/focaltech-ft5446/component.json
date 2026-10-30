@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "id": "focaltech-ft5446",
+  "kind": "touch",
+  "description": "FT5446 touch controller model; firmware and electrical compatibility require validation",
+  "upstream": [{"origin": "linux-6.18.58", "paths": ["drivers/input/touchscreen/edt-ft5x06.c"], "status": "candidate-not-enabled"}],
+  "legacy_sources": [],
+  "limitations": ["Family similarity does not prove FT5446 protocol/firmware compatibility", "Reset, IRQ, supplies and geometry depend on the board"],
+  "integration": "extend-after-audit"
+}

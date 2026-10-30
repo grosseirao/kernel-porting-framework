@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema", "board", "catalog", "deployment", "evidence_index", "instances", "unresolved"],
+  "properties": {
+    "schema": {"type": "integer", "const": 1},
+    "board": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "catalog": {"const": "components/catalog.json"},
+    "deployment": {"const": "inventory-only"},
+    "evidence_index": {"type": "string", "minLength": 1},
+    "instances": {"type": "array", "minItems": 1, "maxItems": 128, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "component", "depends_on", "board_fields", "validation"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "component": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "depends_on": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "board_fields": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9_]+(\\.[a-z0-9_]+)*$"}},
+        "board_sources": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "validation": {"enum": ["lts-boot-tested", "partial-only", "finite-fifo-test-only", "finite-acquisition-test-only", "identity-read-only", "not-ported-to-lts"]}
+      }
+    }},
+    "unresolved": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false, "required": ["function", "reason"],
+      "properties": {"function": {"type": "string", "minLength": 1}, "reason": {"type": "string", "minLength": 1}}
+    }}
+  }
+}

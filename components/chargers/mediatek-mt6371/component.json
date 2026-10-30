@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "id": "mediatek-mt6371",
+  "kind": "charger",
+  "description": "MT6371 charger model; MT6370-family upstream code is only a candidate",
+  "upstream": [{"origin": "linux-6.18.58", "paths": ["drivers/mfd/mt6370.c", "drivers/power/supply/mt6370-charger.c"], "status": "candidate-not-enabled"}],
+  "legacy_sources": [],
+  "limitations": ["Audit all probe/error/remove writes and electrical limits before binding", "Do not instantiate vendor MFD children automatically"],
+  "integration": "blocked-pending-electrical-audit"
+}
